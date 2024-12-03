@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --black: #181722;
+  --white: #fff9f7;
+  --orange: rgba(35, 24, 28, 0.626);
+  --beige: #e8ceac;
+  --brown: rgba(63, 8, 2, 0.904);
+  --pink: rgb(128, 102, 111);
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  position: fixed;
+  align-items: center;
+  z-index: 1000;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+.btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--brown);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 180px;
+  padding-bottom: 10px;
+  background-color: #cb202d;
+  font-weight: 600;
+}
+
+.price-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.price {
+  color: var(--brown);
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#desserts-menu .Container {
+  margin: 3rem 0;
+}
+
+#desserts-menu {
+  padding: 8rem 0;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+#desserts-menu .Container h2 span {
+  color: var(--orange);
+}
+
+#desserts-menu .Container h2 {
+  color: rgb(8, 7, 7);
+  margin-top: -40px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 0;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  display: flex;
+}
+
+.desserts-menu_Container {
+  margin: 3rem 0;
+}
+
+.Menus_Items_Container {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.Img_Cards {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+  flex: 1 1 30rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Img_Cards img {
+  display: block;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.food-menu_Container .Menus_Items_Container .Img_Cards:hover img {
+  transform: scale(1.1);
+}
+
+.Img_Cards h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 500px;
+  margin-right: -80px;
+}
+
+.image-container img .img1 {
+  width: 500px;
+  flex: 1;
+  height: 200px;
+}
+
+.image-container img .img2 {
+  flex: 1;
+  width: 500px;
+  height: 200px;
+}
+
+.img3 img {
+  top: 0;
+  left: 0;
+  size: 450px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px; /* Adjusted width */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: rgb(250, 247, 247);
+  box-shadow: -2px solid 4px hs1(0 4% 15% / 10%);
+  transition: 1.5s;
+  border: 1px solid #fff;
+}
+
+.cart.active {
+  right: 0;
+  transition: 0.5s;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem; /* Adjusted font size */
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  font-size: 16px; /* Adjusted font size */
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 80px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  object-fit: contain;
+  padding: 10px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-products-title {
+  font-weight: bold;
+  font-size: 1rem; /* Adjusted font size */
+  text-transform: uppercase;
+}
+
+.cart-price {
+  font-weight: 600;
+}
+
+.Cart-Quantity {
+  border: 1px solid rgb(99, 3, 3);
+  outline-color: black;
+  width: 4rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.Cart-Remove {
+  font-size: 20px; /* Adjusted font size */
+  cursor: pointer;
+}
+
+.total {
+  font-size: 12px; /* Adjusted font size */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid black;
+}
+
+.total-title {
+  font-size: 16px; /* Adjusted font size */
+  font-weight: 600;
+}
+
+.total-Price {
+  font-size: 16px; /* Adjusted font size */
+  margin-left: 15px;
+  font-weight: 600;
+  position: initial;
+}
+
+.btn-Buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+   font-size: 10px; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+}
